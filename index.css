@@ -33,6 +33,7 @@ header .navbar .container-fluid button {
 header .navbar-nav .nav-item {
     padding: 3px;
     filter: contrast(2);
+    
 }
 
 header .navbar-nav .nav-item:hover {
@@ -45,7 +46,7 @@ header .navbar-nav .nav-item:hover {
 }
 
 header .navbar-nav .nav-item:hover .nav-link {
-    color: white;
+    color: black;
     transition: all linear 0.3s;
 }
 
@@ -66,7 +67,7 @@ header .d-grid button {
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
-    color: black;
+    color: white;
     letter-spacing: 2px;
     word-spacing: 3px;
     transition: all linear 0.3s;
