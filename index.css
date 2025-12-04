@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    font-family: "Asul", serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(./image/header.webp);
+    background-size: cover;
+
+}
+
+header .navbar .container-fluid img {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+header .navbar .container-fluid button {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+header .navbar-nav .nav-item {
+    padding: 3px;
+    filter: contrast(2);
+}
+
+header .navbar-nav .nav-item:hover {
+    text-shadow: 0px 0px 1px black;
+    background-color: rgba(0, 0, 0, 0.074);
+    box-shadow: 0px 0px 10px white;
+    border-radius: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+header .navbar-nav .nav-item:hover .nav-link {
+    color: white;
+    transition: all linear 0.3s;
+}
+
+header .h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+    filter: contrast(2);
+    text-shadow: 1px 0px 5px white;
+}
+
+header .h1 b {
+    color: rgb(193, 14, 14);
+}
+
+header .d-grid button {
+    box-shadow: 0px 0px 10px rgb(71, 71, 71);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: black;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+main section .about {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main section .about .display-1 {
+    padding-top: 40px;
+    color: black;
+    filter: contrast(2);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    font-weight: 900;
+    background-image: linear-gradient(to left, black, rgb(183, 43, 43),black);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+
+}
+
+main section .card {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px gray;
+}
+
+main section .card .card-body .d-grid button {
+    box-shadow: 0px 0px 10px rgb(71, 71, 71);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    /* color: black; */
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+main .extra{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+main section .icon {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main section .icon i {
+    padding: 10px;
+    background-color: rgba(224, 222, 222, 0.384);
+    width: 40px;
+    border-radius: 4px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+main section .icon i:hover {
+    box-shadow: 0px 0px 10px rgb(183, 43, 43);
+    color: black;
+    transition: all linear 0.3s;
+}
+main section .service{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+main section .service .add{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+main section .service .h4{
+padding-top: 30px;
+margin-left: 10px;
+}
+main section .service .display-5{
+    margin-left: 10px;
+}
+main section .service button{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+    /* margin-left: 20px; */
+}
+main section .service .row{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+main section .row .col .card{
+    background-color: rgb(254, 254, 252);
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px red;
+}
+main section .row .col .card:hover{
+    background-color: black;
+    transition: all linear 0.3s;
+    color: white;
+}
+main section .row .col .card img{
+    filter: brightness(.8);
+}
+main section .row .col .card:hover img{
+    filter: brightness(1.4);
+    transform: scale(.96);
+    transition: all linear 0.3s;
+}
+main section .slide{
+    width: 100%;
+    background-color: black;
+
+}
+main section .slide .slider{
+    width: 95%;
+    margin: auto;
+    filter: contrast(1.2);
+    box-shadow: 0px 0px 10px rgb(246, 206, 206);
+}
+main section .slide .extra{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+main section .slide .d-flex button{
+       box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+    margin-top: 20px;
+}
+
+main section .x{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+main section .x .extra{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+main section .x .table{
+    width: 90%;
+    margin: auto;
+}
+main section .x .table tr th,
+main section .x .table tr  td{
+    text-align: center;
+}
+
+@media (min-width:300px) and (max-width:1100px) {
+        main section .x {
+            display: none;
+        }
+}
+main section .news{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+main section .news .card-img-overlay .card-title{
+    /* background-color: red; */
+     color:  rgb(183, 43, 43);
+     margin-left: 20px;
+}
+main section .news .card-img-overlay .card-text{
+    width: 60%;
+    color: black;
+    margin-left: 20px;
+}
+main section .news .d-flex button{
+     box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+main section .news .card{
+    background-color: rgba(255, 255, 255, 0.456);
+    margin-left: 0px;
+    
+}
+@media (min-width:300px) and (max-width:1500px) {
+    main section .news .card-img-overlay .a{
+        display: none;
+    }
+    main section .news .card .hello{
+        display: none;
+    }
+}
+main section .news .extra {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+main section .news .ab{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+
+main section .news .cd{
+    width: 80%;
+    margin: auto;
+
+}
+
+main section .news .ef{
+    width: 70%;
+    margin: auto;
+
+}
+
+main section .news .gh{
+    width: 80%;
+    margin: auto;
+
+}
+
+
+main section .news .ab .d-grid button,
+main section .news .cd .d-grid button,
+main section .news .ef .d-grid button,
+main section .news .gh .d-grid button{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+}
+main section .news .ab img,
+main section .news .cd img,
+main section .news .ef img,
+main section .news .gh img{
+    filter: contrast(1.2);
+}
+main section .news .ab .card-body,
+main section .news .cd .card-body,
+main section .news .ef .card-body,
+main section .news .gh .card-body{
+    background-image:linear-gradient(to left, gray,lightgray);
+}
+
+main section .contact{
+    width: 100%;
+    margin-top: 40px;
+    background-color: white;
+}
+main section .contact .valid{
+    width: 80%;
+    margin: auto;
+    
+}
+main section .contact .extra{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+#btn{
+         box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+}
+#button{
+     box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 8px;
+    filter: brightness(1.2);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: black;
+}
+main .black{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+footer {
+    background-color: black;
+}
+footer .extra{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+footer p{
+    text-align: center;
+}
+footer .icon{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+footer .icon i{
+    background-color: white;
+    width: 40px;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+footer .icon i:hover{
+    box-shadow: 0px 0px 10px firebrick, 0px 0px 10px firebrick;
+}
+footer .h6{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    color: rgb(184, 183, 183);
+}
+#last{
+    text-decoration: underline;
+}
+footer video{
+    width: 100%;
+    background-size: cover;
+    
+}
