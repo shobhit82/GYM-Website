@@ -33,7 +33,7 @@ header .navbar .container-fluid button {
 header .navbar-nav .nav-item {
     padding: 3px;
     filter: contrast(2);
-    
+
 }
 
 header .navbar-nav .nav-item:hover {
@@ -46,7 +46,8 @@ header .navbar-nav .nav-item:hover {
 }
 
 header .navbar-nav .nav-item:hover .nav-link {
-    color: black;
+    color: white;
+    padding-left: 4px;
     transition: all linear 0.3s;
 }
 
@@ -55,6 +56,7 @@ header .h1 {
     margin-top: 20px;
     font-weight: 900;
     filter: contrast(2);
+    color: white;
     text-shadow: 1px 0px 5px white;
 }
 
@@ -89,7 +91,7 @@ main section .about .display-1 {
     text-align: center;
     font-family: "Abril Fatface", serif;
     font-weight: 900;
-    background-image: linear-gradient(to left, black, rgb(183, 43, 43),black);
+    background-image: linear-gradient(to left, black, rgb(183, 43, 43), black);
     background-size: cover;
     background-clip: text;
     color: transparent;
@@ -113,11 +115,13 @@ main section .card .card-body .d-grid button {
     transition: all linear 0.3s;
     cursor: pointer;
 }
-main .extra{
+
+main .extra {
     width: 100%;
     height: 100px;
     background-color: white;
 }
+
 main section .icon {
     /* background-color: red; */
     display: flex;
@@ -140,24 +144,30 @@ main section .icon i:hover {
     color: black;
     transition: all linear 0.3s;
 }
-main section .service{
+
+main section .service {
     width: 100%;
     height: auto;
     background-color: black;
 }
-main section .service .add{
+
+main section .service .add {
     width: 100%;
     height: 80px;
     background-color: black;
 }
-main section .service .h4{
-padding-top: 30px;
-margin-left: 10px;
-}
-main section .service .display-5{
+
+main section .service .h4 {
+    padding-top: 30px;
     margin-left: 10px;
 }
-main section .service button{
+
+main section .service .display-5 {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+main section .service button {
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     border-radius: 3px;
     padding: 8px;
@@ -170,101 +180,84 @@ main section .service button{
     background-color: black;
     /* margin-left: 20px; */
 }
-main section .service .row{
+
+main section .service .row {
     width: 90%;
     margin: auto;
     padding-bottom: 50px;
 }
-main section .row .col .card{
+
+main section .row .col .card {
     background-color: rgb(254, 254, 252);
     height: auto;
     cursor: pointer;
     box-shadow: 0px 0px 10px red;
 }
-main section .row .col .card:hover{
+
+main section .row .col .card:hover {
     background-color: black;
     transition: all linear 0.3s;
     color: white;
 }
-main section .row .col .card img{
+
+main section .row .col .card img {
     filter: brightness(.8);
 }
-main section .row .col .card:hover img{
+
+main section .row .col .card:hover img {
     filter: brightness(1.4);
     transform: scale(.96);
     transition: all linear 0.3s;
 }
-main section .slide{
-    width: 100%;
-    background-color: black;
 
-}
-main section .slide .slider{
-    width: 95%;
-    margin: auto;
-    filter: contrast(1.2);
-    box-shadow: 0px 0px 10px rgb(246, 206, 206);
-}
-main section .slide .extra{
-    width: 100%;
-    height: 100px;
-    background-color: black;
-}
-main section .slide .d-flex button{
-       box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    border-radius: 3px;
-    padding: 8px;
-    filter: brightness(1.2);
-    color: white;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    transition: all linear 0.3s;
-    cursor: pointer;
-    background-color: black;
-    margin-top: 20px;
-}
-
-main section .x{
+main section .x {
     width: 100%;
     height: auto;
     background-color: white;
 }
-main section .x .extra{
+
+main section .x .extra {
     width: 100%;
     height: 50px;
     background-color: white;
 }
-main section .x .table{
+
+main section .x .table {
     width: 90%;
     margin: auto;
 }
+
 main section .x .table tr th,
-main section .x .table tr  td{
+main section .x .table tr td {
     text-align: center;
 }
 
 @media (min-width:300px) and (max-width:1100px) {
-        main section .x {
-            display: none;
-        }
+    main section .x {
+        display: none;
+    }
 }
-main section .news{
+
+main section .news {
     width: 100%;
     height: auto;
     background-color: black;
 }
-main section .news .card-img-overlay .card-title{
+
+main section .news .card-img-overlay .card-title {
     /* background-color: red; */
-     color:  rgb(183, 43, 43);
-     margin-left: 20px;
+    color: rgb(183, 43, 43);
+    margin-left: 20px;
 }
-main section .news .card-img-overlay .card-text{
+
+main section .news .card-img-overlay .card-text {
     width: 60%;
     color: black;
     margin-left: 20px;
 }
-main section .news .d-flex button{
-     box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+main section .news .d-flex button {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
@@ -277,54 +270,311 @@ main section .news .d-flex button{
     margin-top: 20px;
     margin-left: 20px;
 }
-main section .news .card{
+
+main section .news .card {
     background-color: rgba(255, 255, 255, 0.456);
     margin-left: 0px;
-    
+
 }
+
 @media (min-width:300px) and (max-width:1500px) {
-    main section .news .card-img-overlay .a{
+    main section .news .card-img-overlay .a {
         display: none;
     }
-    main section .news .card .hello{
+
+    main section .news .card .hello {
         display: none;
     }
+}
+
+
+
+main section .z {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main section .z .img {
+    width: 100%;
+    background-image: url(./image/3d-gym-equipment.jpg);
+    background-size: cover;
+    height: 300px;
+    /* filter: brightness(.3); */
+}
+
+main section .z .img .h2 {
+    color: white;
+    margin-left: 13px;
+    filter: brightness(3);
+    animation: name 0.3s linear infinite forwards;
+    transition: all linear 0.3s;
+}
+
+@keyframes name {
+    0% {
+        color: white;
+        transition: all linear 0.3s;
+    }
+
+    50% {
+        color: firebrick;
+        transition: all linear 0.3s;
+        /* transform: scale(1.2); */
+    }
+
+    100% {
+        color: white;
+        transition: all linear 0.3s;
+    }
+}
+
+main section .z .img .d-flex .btn {
+    margin-left: 20px;
+
+}
+
+main section .z .extra {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+main section .z .video {
+    width: 80%;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+
+}
+
+main section .z .video video {
+    width: 100%;
+    /* position: relative; */
+
+}
+
+main section .z .video p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-weight: 900;
+    animation: heading 4s linear infinite forwards;
+    transition: all linear 0.3s;
+    text-shadow: 0px 0px 10px goldenrod;
+}
+
+main section .z .video .h4 {
+    color: lightgray;
+    text-shadow: none;
+    position: absolute;
+    text-align: center;
+    animation: none;
+    top: 90px;
+}
+
+@keyframes heading {
+    0% {
+        left: 20px;
+        top: 10px;
+    }
+
+    50% {
+        left: 480px;
+        top: 10px;
+    }
+
+    100% {
+        left: 20px;
+        top: 10px;
+    }
+
+}
+
+@media (min-width:300px)and (max-width:600px) {
+
+    main section .z .video p {
+        font-size: 1.3em;
+        animation: none;
+    }
+
+    main section .z .video .h4 {
+        display: none;
+    }
+
+}
+
+@media (min-width:601px)and (max-width:800px) {
+
+    main section .z .video p {
+        font-size: 2em;
+        animation: none;
+    }
+
+    main section .z .video .h4 {
+        display: none;
+    }
+
+}
+
+@media (min-width:800px)and (max-width:1000px) {
+
+    main section .z .video p {
+        font-size: 3.3em;
+        animation: none;
+    }
+
+    main section .z .video .h4 {
+        display: none;
+    }
+
+}
+
+main section .z .more {
+    width: 100%;
+    background-image: url(./image/1244688.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+main section .z .more .a {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.307);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main section .z .more .a:hover {
+    transform: scale(.97);
+    transition: all linear 0.3s;
+
+}
+
+main section .z .more .a:hover .b {
+    filter: contrast(1.5);
+    transition: all linear 0.3s;
+    border: 3px solid rgb(81, 23, 23);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px firebrick;
+}
+@media (min-width:300px) and (max-width:600px) {
+        main section .z .more .a{
+            width: 80%;
+            height: 83%;
+        }
+        main section .z .more .a .b p {
+            margin-left: 15px;
+        }
+}
+@media (min-width:601px) and (max-width:800px) {
+        main section .z .more .a{
+            width: 80%;
+            height: 90%;
+           
+        }
+  main section .z .more .a .b p {
+            margin-left: 15px;
+        }
+}
+@media (min-width:801px) and (max-width:1000px) {
+        main section .z .more .a{
+            width: 80%;
+            height: 94%;
+          
+        }
+          main section .z .more .a .b p {
+            margin-left: 15px;
+        }
+}
+main section .z .more .a .b {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.284);
+}
+
+main section .z .data {
+    width: 100%;
+    background-color: white;
+}
+#Current{
+    filter: contrast(1.2);
+    color: black;
+    background-image: linear-gradient(to left,white,gray,white);
+   
+    padding-bottom: 8px;
+}
+main section .z .data .row{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main section .z .data .h1{
+    filter: contrast(1.2);
+    color: black;
+    background-image: linear-gradient(to left,white,gray,white);
+    padding-bottom: 8px;
+}
+main section .z .data .row .card{
+    background-color: black;
+    background-image: radial-gradient(white, gray);
+    box-shadow: none;
+    color: black;
+}
+main section .z .data .row .card:hover{
+    transform: scale(1.1);
+    transition: all linear 0.3s;
+    box-shadow: 0px 0px 10px firebrick;
+    filter: contrast(1.5);
+}
+main section .z .data .row .card .card-text{
+    color: firebrick;
+}
+
+main section .z .data .row .card .list-group{
+    background-color: firebrick;
+}
+
+main section .z .data .row .card .list-group .list-group-item {
+    background-color: gray;
+    color: black;
+}
+main section .z .data .row .card .list-group .list-group-item:hover {
+    background-color: white;
+    color: firebrick;
+    font-weight: 800;
 }
 main section .news .extra {
     width: 100%;
     height: 70px;
     background-color: black;
 }
-main section .news .ab{
-    width: 70%;
+
+main section .news .ab {
+    width: 75%;
     margin: auto;
-    background-color: white;
+    box-shadow: 0px 0px 10px firebrick;
 }
 
-main section .news .cd{
-    width: 80%;
+main section .news .cd {
+    width: 75%;
     margin: auto;
-
-}
-
-main section .news .ef{
-    width: 70%;
-    margin: auto;
-
-}
-
-main section .news .gh{
-    width: 80%;
-    margin: auto;
+    box-shadow: 0px 0px 10px firebrick;
 
 }
 
 
 main section .news .ab .d-grid button,
-main section .news .cd .d-grid button,
-main section .news .ef .d-grid button,
-main section .news .gh .d-grid button{
-        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+main section .news .cd .d-grid button {
+
+    box-shadow: 0px 0px 10px firebrick;
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
@@ -335,36 +585,41 @@ main section .news .gh .d-grid button{
     cursor: pointer;
     background-color: black;
 }
+
 main section .news .ab img,
-main section .news .cd img,
-main section .news .ef img,
-main section .news .gh img{
+main section .news .cd img {
     filter: contrast(1.2);
 }
+
+
 main section .news .ab .card-body,
-main section .news .cd .card-body,
-main section .news .ef .card-body,
-main section .news .gh .card-body{
-    background-image:linear-gradient(to left, gray,lightgray);
+main section .news .cd .card-body {
+    background-image: linear-gradient(to left, gray, lightgray);
 }
 
-main section .contact{
+main section .contact {
     width: 100%;
     margin-top: 40px;
     background-color: white;
 }
-main section .contact .valid{
+
+main section .contact .valid {
     width: 80%;
     margin: auto;
-    
 }
-main section .contact .extra{
+
+main section .contact .img-fuild {
+    width: 90%;
+}
+
+main section .contact .extra {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: white;
 }
-#btn{
-         box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+#btn {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
@@ -375,8 +630,9 @@ main section .contact .extra{
     cursor: pointer;
     background-color: black;
 }
-#button{
-     box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+#button {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
@@ -387,23 +643,28 @@ main section .contact .extra{
     cursor: pointer;
     background-color: black;
 }
-main .black{
+
+main .black {
     width: 100%;
     height: 50px;
     background-color: black;
 }
+
 footer {
     background-color: black;
 }
-footer .extra{
+
+footer .extra {
     width: 100%;
     height: 80px;
     background-color: black;
 }
-footer p{
+
+footer p {
     text-align: center;
 }
-footer .icon{
+
+footer .icon {
     width: 250px;
     margin: auto;
     display: flex;
@@ -411,27 +672,32 @@ footer .icon{
     justify-content: space-evenly;
     margin-top: 10px;
 }
-footer .icon i{
+
+footer .icon i {
     background-color: white;
     width: 40px;
     padding: 10px;
     font-size: 1.3em;
     border-radius: 5px;
 }
-footer .icon i:hover{
+
+footer .icon i:hover {
     box-shadow: 0px 0px 10px firebrick, 0px 0px 10px firebrick;
 }
-footer .h6{
+
+footer .h6 {
     width: 70%;
     text-align: center;
     margin: auto;
     color: rgb(184, 183, 183);
 }
-#last{
+
+#last {
     text-decoration: underline;
 }
-footer video{
+
+footer video {
     width: 100%;
     background-size: cover;
-    
+
 }
