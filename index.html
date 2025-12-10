@@ -19,11 +19,13 @@
 
 </head>
 
-<body>
-
-    <header>
-
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+<body class="faq-body" ontouchstart="touchStart()">
+    <div class="progress-wrap" id="progress-scroll">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+        <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid m-2">
                 <img src="./image/logo.png" class="px-lg-3" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,50 +33,53 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent mynavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#"><b>HOME</b></a>
+                            <a href="#home" class="nav-link" href="#"><b>HOME</b></a>
 
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria="true"><b>ABOUT US</b></a>
+                            <a href="#about" class="nav-link" aria="true"><b>ABOUT US</b></a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria="true"><b>SERVICES</b></a>
+                            <a href="#service" class="nav-link" aria="true"><b>SERVICES</b></a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria="true"><b>NEWS</b></a>
+                            <a href="#news" class="nav-link" aria="true"><b>NEWS</b></a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" aria="true"><b>PAGES</b></a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" aria="true"><b>CONTACT</b></a>
+                            <a href="#contact" class="nav-link" aria="true"><b>CONTACT</b></a>
                         </li>
 
 
                     </ul>
                     <form class="d-flex ms-auto mx-3" role="search">
-                        <button class="btn btn-outline-secondary  px-lg-3 " type="submit"><b>BECAME A
+                        <button class="btn btn-outline-danger px-lg-3 " type="submit"><b>BECAME A
                                 MEMBER</b></button>
                     </form>
                 </div>
             </div>
         </nav>
 
-        <p data-aos="zoom-in" class="h1">BE <b>STRONG</b> <br>TRANINGG HARD</p>
+  
+    <header id="home" >
+
+        <p data-aos="zoom-in" class="h1" style="margin: 0; padding-top: 200px; padding-bottom: 20px; ">BE <b>STRONG</b> <br>TRANINGG HARD</p>
 
         <div class="d-grid gap-2 col-3  mx-auto">
-            <button class="btn btn-outline-secondary" type="button"><b>GET INFO <i
+            <button class="btn btn-outline-danger" type="button"><b>GET INFO <i
                         class="fa-solid fa-dumbbell"></i></b></button>
         </div>
 
     </header>
 
     <main>
-        <section>
+        <section id="about" >
             <div class="about">
 
                 <h1 data-aos="fade-right" id="type" class="display-1 mb-5"><b>JOIN SMART AND TRANSFORM BODY & MIND <i
@@ -106,7 +111,7 @@
                                         favorite layouts.</small>
                                 </p>
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-dark mb-4" type="button"><b>BECAME A
+                                    <button class="btn btn-outline-danger mb-4" type="button"><b>BECAME A
                                             MEMBER</b></button>
 
                                     <div class="icon mt-lg-5">
@@ -129,7 +134,7 @@
 
         <div class="extra"></div>
 
-        <section>
+        <section id="service">
             <div class="service">
                 <!-- <div class="add"></div> -->
                 <p data-aos="fade-right" class="h4 text-uppercase text-danger px-lg-5">oUR sERVICES FOR YOU</p>
@@ -137,7 +142,7 @@
                     <br>We Offer to you
                 </h1>
                 <form class="d-flex mx-auto " role="search">
-                    <button class="btn btn-outline-secondary mx-auto mt-lg-3  px-lg-5 " type="submit"><b>MORE
+                    <button class="btn btn-outline-danger mx-auto mt-lg-3  px-lg-5 " type="submit"><b>MORE
                             SERVICES</b></button>
                 </form>
                 <!-- <div class="add"></div> -->
@@ -296,7 +301,7 @@
                 <div data-aos="fade-right" class="img">
                     <p data-aos="fade-right" class="h2 pt-3 px-lg-5 ">"Some inner Pre-Built Pages:-</p>
                     <form class="d-flex ms-auto mx-3" role="search">
-                        <button class="btn btn-outline-light mx-lg-5 mt-3 px-lg-3 " type="submit"><b>BECAME A
+                        <button class="btn btn-outline-danger mx-lg-5 mt-3 px-lg-3 " type="submit"><b>BECAME A
                                 MEMBER</b></button>
                     </form>
                 </div>
@@ -431,7 +436,7 @@
         </section>
 
         <br>
-        <section>
+        <section id="news">
             <div class="news">
                 <div class="card text-bg-dark">
                     <img src="./image/news.jpg" class="card-img" alt="...">
@@ -461,7 +466,7 @@
                         </div>
 
                         <form class="d-flex mx-auto mt-lg-5" role="search">
-                            <button data-aos="zoom-in" class="btn btn-secondary mx-auto  px-lg-5 " type="submit"><b>MORE
+                            <button data-aos="zoom-in" class="btn btn-outline-danger mx-auto  px-lg-5 " type="submit"><b>MORE
                                     NEWS</b></button>
                         </form>
 
@@ -480,7 +485,7 @@
                             imperdiet efficitur. Nam urna massa, elementum eu ullamcorper eget, condimentum sed eros.
                             Vivamus consectetur massa sed dui hendrerit, ut consectetur augue porttitor.</p>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button data-aos="zoom-in" class="btn btn-secondary" type="button">Read More</button>
+                            <button data-aos="zoom-in" class="btn btn-outline-danger" type="button">Read More</button>
 
                         </div>
                     </div>
@@ -499,7 +504,7 @@
                             imperdiet efficitur. Nam urna massa, elementum eu ullamcorper eget, condimentum sed eros.
                             Vivamus consectetur massa sed dui hendrerit, ut consectetur augue porttitor.</p>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button data-aos="zoom-in" class="btn btn-secondary " type="button">Read More</button>
+                            <button data-aos="zoom-in" class="btn btn-outline-danger " type="button">Read More</button>
 
                         </div>
                     </div>
@@ -509,7 +514,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <div class="contact">
                 <div class="extra"></div>
                 <h1 data-aos="fade-right" class="display-5 text-uppercase text-danger mx-3 px-lg-5">OUR CONTACT
@@ -559,7 +564,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" id="btn" class="btn btn-secondary px-lg-3">Sign in</button>
+                            <button type="submit" id="btn" class="btn btn-outline-danger px-lg-3">Sign in</button>
                         </div>
                     </form>
                     <div class="extra"></div>
@@ -567,7 +572,7 @@
                     <img data-aos="zoom-in" src="./image/map.png" class="img-fluid mb-4" alt="...">
 
                     <form class="d-flex mx-auto mt-lg-5" role="search">
-                        <button data-aos="zoom-in" id="button" class="btn btn-secondary mx-auto  px-lg-5 "
+                        <button data-aos="zoom-in" id="button" class="btn btn-outline-danger mx-auto  px-lg-5 "
                             type="submit"><b>SEND MESSAGE</b></button>
                     </form>
                 </div>
@@ -598,7 +603,7 @@
             <i class="fa-brands fa-instagram"></i>
         </div>
         <form class="d-flex mb-4 mx-auto mt-lg-5" role="search">
-            <button data-aos="zoom-in" id="button" class="btn btn-secondary mx-auto  px-lg-5 " type="submit"><b>BOOK A
+            <button data-aos="zoom-in" id="button" class="btn btn-outline-danger mx-auto  px-lg-5 " type="submit"><b>BOOK A
                     MEMBER</b></button>
         </form>
 

@@ -1,8 +1,131 @@
+
 body {
     margin: 0;
     font-family: "Asul", serif;
 }
 
+/* Scroll */
+
+.faq-body:hover,
+[touch] .faq-body {
+  overflow-y: auto;
+}
+
+.faq-body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #000;
+}
+.faq-body::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 10rem;
+}
+
+.faq-body::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+.faq-body::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+}
+.faq-question {
+  width: 250px; /* set width to 250px not 100% */
+  padding: 20px;
+  border-bottom: 1px solid #000;
+  line-height: 1.3;
+  color: #15191b;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+/* Scroll */
+/* SCROLL PROGESS */
+
+.progress-wrap {
+  right: 25px;
+  bottom: 25px;
+  color: white;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px white;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+}
+.progress-wrap input {
+  z-index: 10001;
+}
+.progress-wrap input:checked + html {
+  -ms-scroll-snap-type: unset;
+      scroll-snap-type: unset;
+}
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.progress-wrap::after {
+  position: absolute;
+  content: "↑";
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: gray;
+  left: 0;
+  top: -2px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+.progress-wrap::before {
+  position: absolute;
+  content: "↑";
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  -webkit-text-fill-color: #F13E51;
+  left: 0;
+  top: -2px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+.progress-wrap svg path {
+  fill: none;
+}
+.progress-wrap svg.progress-circle path {
+  stroke: #F13E51;
+  stroke-width: 4;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+}
+@media (min-width:300px) and (max-width:667px) {
+    .progress-wrap{
+        /* background-color: red; */
+        right: 14px;
+        bottom: 14px;
+    }
+}
+/* SCROLL PROGESS */
 header {
     width: 100%;
     height: 100vh;
@@ -12,45 +135,92 @@ header {
 
 }
 
-header .navbar .container-fluid img {
-    box-shadow: 0px 0px 10px gray;
-    border-radius: 3px;
-    padding: 6px;
+nav{
+    background-color: #FFF;
 }
 
-header .navbar .container-fluid button {
+.navbar .container-fluid img {
     box-shadow: 0px 0px 10px gray;
     border-radius: 3px;
-    padding: 8px;
+    padding: 16px;
+    transition: all linear 0.3s;
+    background-color: #F00;
+}
+
+.navbar .container-fluid button {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 3px;
+    padding: 18px;
     filter: brightness(1.2);
-    color: white;
+    color: red;
     letter-spacing: 2px;
     word-spacing: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
+     transition: all linear 0.3s;
 }
-
-header .navbar-nav .nav-item {
+.navbar-nav .nav-item {
     padding: 3px;
     filter: contrast(2);
 
 }
 
-header .navbar-nav .nav-item:hover {
-    text-shadow: 0px 0px 1px black;
+
+.navbar{
+    transition: all linear 0.3s;;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link{
+    color: #FFF;
+}
+.navbar-nav .nav-item .nav-link {
+    padding: 3px;
+    filter: contrast(2);
+
+}
+
+.navbar-nav .nav-item:hover {
+    /* text-shadow: 0px 0px 1px black; */
     background-color: rgba(0, 0, 0, 0.074);
     box-shadow: 0px 0px 10px white;
     border-radius: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
+    /* color: firebrick; */
 }
 
-header .navbar-nav .nav-item:hover .nav-link {
-    color: white;
+.navbar-nav .nav-item:hover .nav-link {
+    color: firebrick;
     padding-left: 4px;
     transition: all linear 0.3s;
+
 }
 
+
+nav.sticky {
+  padding: 5px 100px;
+  background: #080808;
+}
+
+
+nav.sticky .container-fluid img {
+    padding: 5px;
+}
+
+nav.sticky .container-fluid button {
+    padding: 5px;
+}
+.navbar button:hover{
+    color: white;
+}
+@media (min-width:300px) and (max-width:667px) {
+    .navbar .container-fluid img {
+        width: 130px;
+    }
+    .navbar .container-fluid button{
+        padding: 7px;
+    }
+    
+}
 header .h1 {
     text-align: center;
     margin-top: 20px;
@@ -143,6 +313,7 @@ main section .icon i:hover {
     box-shadow: 0px 0px 10px rgb(183, 43, 43);
     color: black;
     transition: all linear 0.3s;
+    color: firebrick;
 }
 
 main section .service {
@@ -266,7 +437,7 @@ main section .news .d-flex button {
     word-spacing: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -472,6 +643,11 @@ main section .z .more .a:hover .b {
         main section .z .more .a .b p {
             margin-left: 15px;
         }
+        nav.sticky {
+        padding: 0px;
+        background: #080808;
+        }
+
 }
 @media (min-width:601px) and (max-width:800px) {
         main section .z .more .a{
@@ -583,7 +759,7 @@ main section .news .cd .d-grid button {
     word-spacing: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
 }
 
 main section .news .ab img,
@@ -623,25 +799,33 @@ main section .contact .extra {
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
-    color: white;
+    color: red;
     letter-spacing: 2px;
     word-spacing: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
 }
-
+#btn:hover{
+    color: white;
+    box-shadow: 0px 0px 10px red;
+}
 #button {
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
     border-radius: 3px;
     padding: 8px;
     filter: brightness(1.2);
-    color: white;
+    color: red;
+    font-weight: 900;
     letter-spacing: 2px;
     word-spacing: 3px;
     transition: all linear 0.3s;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
+}
+#button:hover{
+    color: white;
+    box-shadow: 0px 0px 10px firebrick;
 }
 
 main .black {
@@ -683,6 +867,7 @@ footer .icon i {
 
 footer .icon i:hover {
     box-shadow: 0px 0px 10px firebrick, 0px 0px 10px firebrick;
+    color: firebrick;
 }
 
 footer .h6 {
