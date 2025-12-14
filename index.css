@@ -139,15 +139,6 @@ body {
 }
 
 /* SCROLL PROGESS */
-header {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    background-image: url(./image/silhouette-woman-gym.jpg);
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
 
 nav {
     background-color: #FFF;
@@ -183,11 +174,13 @@ nav {
 
 .navbar {
     transition: all linear 0.3s;
-    ;
+    background-image: linear-gradient(to left, white,rgb(250, 203, 203),white);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.814),rgb(254, 215, 215),rgba(0, 0, 0, 0.818));
 }
 
 .navbar-dark .navbar-nav .nav-item .nav-link {
     color: #FFF;
+    filter: brightness(2);
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -216,7 +209,7 @@ nav {
 
 nav.sticky {
     padding: 5px 100px;
-    background: #080808;
+    background: #080808d6;
 }
 
 
@@ -242,66 +235,44 @@ nav.sticky .container-fluid button {
     }
 
 }
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(./image/1897058.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 
 header .h1 {
     text-align: center;
-
     font-weight: 900;
     filter: contrast(2);
     color: white;
+    word-spacing: 15px;
+    margin: 0; padding-top: 120px; padding-bottom: 20px; 
     /* text-shadow: 1px 0px 5px white; */
 }
 
 header .h1 b {
     color: rgb(193, 14, 14);
+    font-size: 1.5em;
 }
 
-header .slide {
-    width: 30%;
-    height: 72%;
-    position: absolute;
-    left: -100%;
-    top: 66px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    animation: slide ease-out 1  0.6s forwards;
-    transition: all ease-out 0.6s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+header .display-1{
+  font-family: "Sekuya", system-ui;
+  filter: brightness(3);    
+  padding-top: 100px;
+  color: rgb(179, 178, 178);
+}
+header .display-1 strong{
+      color: rgb(193, 14, 14);
+      font-size: 2em;
+       filter: contrast(2);
 
 }
-@keyframes slide {
-    0%{
-       top: 66px;
-       left: -100%;
-    }
-    100%{
-        top: 66px;
-        left:10px;
-    }
-    
-}
-header .slide .data{
-    width: 95%;
-    height: 96%;
-    background-color: rgb(242, 17, 17);
-    background-size: cover;
-    border-radius: 10px;
-    overflow: hidden;
-    background-size: cover;
-    box-shadow: 0px 0px 10px red;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    background-image: url(./image/silhouette-man-gym.jpg);
-}
-@media (min-width:300px) and (max-width:1032px) {
-    header .slide{
-        display: none;
-    }
-}
+
 header .d-grid button {
     box-shadow: 0px 0px 10px rgb(71, 71, 71);
     border-radius: 3px;
@@ -316,7 +287,13 @@ header .d-grid button {
     font-weight: 800;
     cursor: pointer;
 }
-
+@media (min-width:300px) and (max-width:700px) {
+   
+    header .d-grid button{
+        width: 200px;
+        margin-left: -50px;
+    }
+}
 main section .about {
     width: 100%;
     height: auto;
@@ -997,3 +974,63 @@ footer video {
     color: firebrick;
     
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  color: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #222;
+  font-family: Helvetica, sans-serif;
+}
+.cursor {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 3px solid firebrick;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+
+.expand {
+    background: transparent;
+    animation: moveCursor2 .5s forwards;
+    border: 1px solid yellow;
+}
+
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2.5);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+

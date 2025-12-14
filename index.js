@@ -50,16 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollTop: $(hrefAttr).offset().top - 60
         }, 900);
     });
-    //  $(window).on('scroll', function() {
-    //   if ($(window).scrollTop()) {
-    //     $('nav').addClass('bg-dark');
-    //     $('nav').addClass('navbar-dark');
-    //   } else {
-    //     $('nav').removeClass('bg-dark');
-    //     $('nav').removeClass('navbar-dark');
-    //   }
-    // })
-
+  
     
 });
 
@@ -74,3 +65,16 @@ function touchStart() {
   document.body.setAttribute("touch", "");
 }
 
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
+
+document.addEventListener('click', e => {
+    cursor.classList.add("expand");
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500);
+});
