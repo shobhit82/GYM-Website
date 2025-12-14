@@ -298,6 +298,8 @@ main section .about {
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
+      margin-bottom: 0 !important;
+    padding-bottom: 120px !important;
 }
 
 main section .about .display-1 {
